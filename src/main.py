@@ -1,8 +1,6 @@
 import Modules.Basic as ope
 
-
 SIGNS = ['+', '-', 'x', '/', '^']
-
 
 def detect_signs(sig, param):
     if sig == '+':
@@ -16,7 +14,6 @@ def detect_signs(sig, param):
     elif sig == '^':
         return ope.empowerment(param[0], param[1])
 
-
 def process(txt):
     txt = txt.split()
     res = []
@@ -28,7 +25,6 @@ def process(txt):
             sig = i
     return detect_signs(sig, res)
 
-
 if __name__ == '__main__':
     print('Bienvenido a Math')
     while True:
@@ -36,5 +32,3 @@ if __name__ == '__main__':
         if x == 'quit':
             break
         print(process(x))
-
-
